@@ -1,0 +1,31 @@
+<%@ page import="java.util.*, java.io.*, java.net.*" %>
+
+<html>
+<head><title>RandoMongo</title></head>
+<body>
+  <%
+    String[] servers = { {% for db_server in db_servers %}"{{ db_server }}",{% endfor %} };
+    String selectedServer = servers[new Random().nextInt(servers.length)];
+  %>
+      <h2>Connecting to MongoDB Server <i>(<%= selectedServer %>)</i>...</h2>
+  <%
+    Socket socket = new Socket(selectedServer, 27017);
+    OutputStream outSocket = socket.getOutputStream();
+    String str = "Hello!\n";
+    byte buffer[] = str.getBytes();
+    outSocket.write(buffer);
+    socket.close();	
+  %>
+  <h2>Bravo!</h2>
+  <p>
+  <p>
+  <p>
+  <h1> Parse out the domain name of the following URLs:</h1>
+  <h2>Example: "https://www.akamai.com" == "akamai"</h2>
+  <p>
+  <h3>"http://github.com/guardicore/monkey"</h3>
+  <h3>"https://arya.demo.guardicore.com/"</h3>
+  <h3>"https://www.infosecurity-magazine.com/"</h3>
+  <h3>"www.google.co.il"</h3>
+</body>
+</html>

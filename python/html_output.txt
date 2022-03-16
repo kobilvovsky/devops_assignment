@@ -1,0 +1,19 @@
+<html>
+<head><title>RandoMongo</title></head>
+<body>
+
+      <h2>Connecting to MongoDB Server <i>(192.168.0.13)</i>...</h2>
+
+  <h2>Bravo!</h2>
+  <p>
+  <p>
+  <p>
+  <h1> Parse out the domain name of the following URLs:</h1>
+  <h2>Example: "https://www.akamai.com" == "akamai"</h2>
+  <p>
+  <h3>"http://github.com/guardicore/monkey"</h3>
+  <h3>"https://arya.demo.guardicore.com/"</h3>
+  <h3>"https://www.infosecurity-magazine.com/"</h3>
+  <h3>"www.google.co.il"</h3>
+</body>
+</html>
