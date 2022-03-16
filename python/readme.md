@@ -11,6 +11,6 @@ to run the script execute this command: 'python3 domains_script.py' or 'python d
 
 If all executed propely you should be able to find the result CSV file in the same directory.
 
-when using python_script_v2 user needs to pass in the LB server local ip as an argument. e.g.
+when using domains_script_v2 user needs to pass in the LB server local ip as an argument. e.g.
 
-python3 python_script_v2.py 1.1.1.1
+python3 domains_script_v2.py 1.1.1.1
